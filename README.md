@@ -3,16 +3,22 @@ instagram clone with Express + Prisma + React Navtive
 
 
 ##User Stories
-- [ ] Log in
-- [ ] Like / Unlike a photo
-- [ ] Comment on a photo
-- [ ] Search by user
-- [ ] Search by location
-- [ ] See user profile
-- [ ] Follow / Unfollow User
-- [ ] See the full photo
-- [ ] Edit my proifile
-- [ ] Create account
-- [ ] Upload a photo
-- [ ] Edit the photo (Delete)
+- [x] Create account
+- [x] Request Secret
+- [x] confirm Secret (Login)
+- [x] Like / Unlike a post
+- [x] Comment on a post
+- [x] Search by user
+- [x] Search by location
+- [x] Follow / Unfollow User
+- [x] See user profile
+- [x] See my profile
+- [x] See the full photo
+- [x] Edit my proifile
+- [ ] Upload a post
+- [ ] Edit the post (Delete)
 - [ ] See the feed
+- [ ] See rooms
+- [ ] See a room
+- [ ] Send private Message
+- [ ] Receive Message (Realtime)
