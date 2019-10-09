@@ -13,6 +13,11 @@ export default {
 			where: { post: { id: parent.id } }
 		})
 			.aggregate()
-			.count()
-	}
+			.count(),
+		user: ({ id }) => prisma.post({ id }).user(),
+		files: ({ id }) => prisma.post({ id }).files(),
+		comments: ( {id} ) => prisma.post( { id }).comments(),
+		likes: ( {id} ) => prisma.post( { id }).likes()
+	},
+
 }
