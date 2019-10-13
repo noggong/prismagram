@@ -1,6 +1,6 @@
 type User {
   id: ID! @id
-	avatar: String
+	avatar: String @default(value: "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-avatar-zoe-saldana.jpg")
 	username: String! @unique
 	email: String! @unique
 	firstName: String @default(value: "")
