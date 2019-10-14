@@ -14,6 +14,12 @@ export default {
 		})
 			.aggregate()
 			.count(),
+
+		commentCount:  parent => prisma.commentsConnection({
+				where: { post: { id: parent.id } }
+			})
+				.aggregate()
+				.count(),
 		user: ({ id }) => prisma.post({ id }).user(),
 		files: ({ id }) => prisma.post({ id }).files(),
 		comments: ( {id} ) => prisma.post( { id }).comments(),
